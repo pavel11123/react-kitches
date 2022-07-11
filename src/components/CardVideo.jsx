@@ -1,4 +1,4 @@
-function CardVideo() {
+function CardVideo(propsVideo) {
   return (
     <div className="card__video">
       <div className="card__video-vine">
@@ -7,8 +7,8 @@ function CardVideo() {
           controls
           preload="metadata"
         >
-          <source type="video/webm" src="/video/video-1.webm" />
-          <source type="video/webm" src="/video/video-1.mp4" />
+          <source type="video/webm" src={propsVideo.videoWebm} />
+          <source type="video/webm" src={propsVideo.videoMp4} />
         </video>
       </div>
     </div>

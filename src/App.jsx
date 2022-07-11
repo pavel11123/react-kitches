@@ -3,6 +3,42 @@ import Footer from "./components/Footer";
 import CardPhoto from "./components/CardPhoto";
 import CardVideo from "./components/CardVideo";
 
+const arr = [
+  {
+    imageUrl: "/img/photo/content-photo-1.png",
+  },
+  {
+    imageUrl: "/img/photo/content-photo-2.png",
+  },
+  {
+    imageUrl: "/img/photo/content-photo-3.png",
+  },
+  {
+    imageUrl: "/img/photo/content-photo-4.png",
+  },
+  {
+    imageUrl: "/img/photo/content-photo-5.png",
+  },
+  {
+    imageUrl: "/img/photo/content-photo-6.png",
+  },
+];
+
+const arrVideo = [
+  {
+    videoWebm: "/video/video-1.webm",
+    videoMp4: "/video/video-1.mp4",
+  },
+  {
+    videoWebm: "/video/video-1.webm",
+    videoMp4: "/video/video-1.mp4",
+  },
+  {
+    videoWebm: "/video/video-1.webm",
+    videoMp4: "/video/video-1.mp4",
+  },
+];
+
 function App() {
   return (
     <div className="wrapper">
@@ -23,65 +59,15 @@ function App() {
           <section className="content-main">
             <div className="container">
               <div className="card-grid">
-                <CardPhoto />
-
-                <CardVideo />
-
-                <div className="card__photo">
-                  <div className="card__photo-img">
-                    <img src="/img/photo/content-photo-3.png" alt="logo" />
-                  </div>
-                </div>
-
-                <div className="card__video">
-                  <div className="card__video-vine">
-                    <video
-                      poster="/img/photo/content-photo-4.png"
-                      controls
-                      preload="metadata"
-                    >
-                      <source type="video/webm" src="/video/video-1.webm" />
-                      <source type="video/webm" src="/video/video-1.mp4" />
-                    </video>
-                  </div>
-                </div>
-
-                <div className="card__photo">
-                  <div className="card__photo-img">
-                    <img src="/img/photo/content-photo-5.png" alt="logo" />
-                  </div>
-                </div>
-
-                <div className="card__photo">
-                  <div className="card__photo-img">
-                    <img src="/img/photo/content-photo-6.png" alt="logo" />
-                  </div>
-                </div>
-
-                <div className="card__photo">
-                  <div className="card__photo-img">
-                    <img src="/img/photo/content-photo-7.png" alt="logo" />
-                  </div>
-                </div>
-
-                <div className="card__video">
-                  <div className="card__video-vine">
-                    <video
-                      poster="/img/photo/content-photo-8.png"
-                      controls
-                      preload="metadata"
-                    >
-                      <source type="video/webm" src="/video/video-1.webm" />
-                      <source type="video/webm" src="/video/video-1.mp4" />
-                    </video>
-                  </div>
-                </div>
-
-                <div className="card__photo">
-                  <div className="card__photo-img">
-                    <img src="/img/photo/content-photo-9.png" alt="logo" />
-                  </div>
-                </div>
+                {arr.map((obj) => (
+                  <CardPhoto imageUrl={obj.imageUrl}></CardPhoto>
+                ))}
+                {arrVideo.map((obj) => (
+                  <CardVideo
+                    videoWebm={obj.videoWebm}
+                    videoMp4={obj.videoMp4}
+                  ></CardVideo>
+                ))}
               </div>
             </div>
           </section>
