@@ -1,8 +1,8 @@
-function CardPhoto() {
+function CardPhoto(propsPhoto) {
   return (
     <div className="card__photo">
       <div className="card__photo-img">
-        <img src="/img/photo/content-photo-1.png" alt="logo" />
+        <img src={propsPhoto.imageUrl} alt="logo" />
       </div>
     </div>
   );
