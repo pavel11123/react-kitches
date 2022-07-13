@@ -3,7 +3,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-top d-fl-column">
         <div className="footer__info d-fl-wrap">
-          <h2>Закзать кухню от</h2>
+          <h2>Заказать кухню от</h2>
           <div className="footer__logo">
             <img src="/img/icon/footer-logo.svg" alt="logo" />
           </div>
