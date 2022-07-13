@@ -5,22 +5,22 @@ import CardVideo from "./components/CardVideo";
 
 const arr = [
   {
-    imageUrl: "/img/photo/content-photo-1.png",
+    imageUrl: "/img/photo/content-photo-1.webp",
   },
   {
-    imageUrl: "/img/photo/content-photo-2.png",
+    imageUrl: "/img/photo/content-photo-2.webp",
   },
   {
-    imageUrl: "/img/photo/content-photo-3.png",
+    imageUrl: "/img/photo/content-photo-3.webp",
   },
   {
-    imageUrl: "/img/photo/content-photo-4.png",
+    imageUrl: "/img/photo/content-photo-4.webp",
   },
   {
-    imageUrl: "/img/photo/content-photo-5.png",
+    imageUrl: "/img/photo/content-photo-5.webp",
   },
   {
-    imageUrl: "/img/photo/content-photo-6.png",
+    imageUrl: "/img/photo/content-photo-6.webp",
   },
 ];
 
