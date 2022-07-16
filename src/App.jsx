@@ -3,7 +3,7 @@ import Footer from "./components/Footer";
 import CardPhoto from "./components/CardPhoto";
 import CardVideo from "./components/CardVideo";
 
-const arr = [
+const arrPhoto = [
   {
     imageUrl: "/img/photo/content-photo-1.webp",
   },
@@ -59,11 +59,12 @@ function App() {
           <section className="content-main">
             <div className="container">
               <div className="card-grid">
-                {arr.map((obj) => (
-                  <CardPhoto imageUrl={obj.imageUrl}></CardPhoto>
+                {arrPhoto.map((obj, index) => (
+                  <CardPhoto key={index} imageUrl={obj.imageUrl}></CardPhoto>
                 ))}
-                {arrVideo.map((obj) => (
+                {arrVideo.map((obj, index) => (
                   <CardVideo
+                    key={index}
                     videoWebm={obj.videoWebm}
                     videoMp4={obj.videoMp4}
                   ></CardVideo>
